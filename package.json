@@ -6,6 +6,7 @@
 		"start": "concurrently \"npm run dev\" \"ts-node-dev src/server/server.ts\"",
 		"dev": "webpack-dev-server --mode development",
 		"build": "webpack --mode production",
+		"prod": "concurrently \"npm run build\" \"ts-node-dev src/server/server.ts\"",
 		"lint": "npx eslint ."
 	},
 	"author": "",
